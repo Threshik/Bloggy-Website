@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* box-model*/
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ebf2ff;
+  }
+  
+  .card-img-top {
+    padding: 15px;
+    height: 300px;
+    width: auto;
+  }
+  
+  .place__holder__image {
+    width: 100%;
+  }
+  .navclass {
+    padding: 0 2rem;
+    overflow: hidden;
+    min-height: 10vh;
+    height: 0rem;
+    background: white;
+  }
+  .navclass .nav-menu {
+    justify-content: space-between;
+  }
+  
+  .navclass .brand a {
+    font-size: 2.1rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: Quicksand;
+    color: rgb(42, 41, 41);
+  }
+  .navclass .nav-items {
+    display: flex;
+    margin: 0;
+  }
+  .navclass .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: Livvic;
+  }
+  .navclass .nav-items .nav-link:hover {
+    background-color: #4f5b5e;
+  }
+  .navclass .nav-items .nav-link:hover a {
+    color: whitesmoke;
+  }
+  .navclass .social {
+    padding: 1.6rem 0;
+  }
+  .navclass .social i {
+    padding: 0.2rem;
+  }
+  .navclass .social i:hover {
+    color: #536769;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(42, 41, 41);
+  }
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  ul {
+    list-style: none;
+  }
+  span {
+    font-family: Abel;
+  }
+  

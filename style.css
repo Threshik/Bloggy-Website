@@ -1,0 +1,708 @@
+@import url("../css/fonts.css");
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0%;
+  overflow-x: hidden;
+}
+/*----Global classess----*/
+a {
+  text-decoration: none;
+  color: rgb(42, 41, 41);
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+span {
+  font-family: Abel;
+}
+button.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: var(--Livvic);
+  cursor: pointer;
+}
+p {
+  font-family: Quicksand;
+  color: var(--text-light);
+}
+h1 {
+  font-family: Quicksand;
+  font-size: 2.5rem;
+}
+
+.container {
+  margin-top: 5rem;
+  margin-left: 6rem;
+  margin-left: 5rem;
+}
+
+/*----Global classess---x-*/
+
+/*-----------Gradient colors---------*/
+:root {
+  /*      Theme colors        */
+  --text-gray: #3f4954;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --white: #ffffff;
+  --midnight: #104f55;
+  --sky: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+/*------------navbar-------------*/
+.navclass {
+  padding: 0 2rem;
+  overflow: hidden;
+  min-height: 10vh;
+  height: 0rem;
+  background: white;
+}
+.navclass .nav-menu {
+  justify-content: space-between;
+}
+
+.navclass .brand a {
+  font-size: 2.1rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: Quicksand;
+  color: rgb(42, 41, 41);
+}
+.navclass .nav-items {
+  display: flex;
+  margin: 0;
+}
+.navclass .nav-items .nav-link {
+  padding: 1.6rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  font-family: Livvic;
+}
+.navclass .nav-items .nav-link:hover {
+  background-color: #4f5b5e;
+}
+.navclass .nav-items .nav-link:hover a {
+  color: whitesmoke;
+}
+.navclass .social {
+  padding: 1.6rem 0;
+}
+.navclass .social i {
+  padding: 0.2rem;
+}
+.navclass .social i:hover {
+  color: #536769;
+}
+
+/*------------navbar--------x-----*/
+
+/*---------------main section------------*/
+main .site-title {
+  background: url("../assests/ba10.png");
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+}
+main .site-title .site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: aliceblue;
+}
+main .site-title .site-background h1 {
+  margin: 3rem;
+  font-size: 40px;
+  font-family: Livvic;
+  letter-spacing: 2px;
+}
+main .site-title .btn {
+  padding: 1rem 3rem;
+  width: 150px;
+  border-radius: 2rem;
+  background: var(--sky);
+  border-style: groove;
+  font-family: Livvic;
+  border: none;
+  font-size: 1rem;
+}
+main .site-title .btn:hover {
+  background: transparent;
+  color: aliceblue;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+#blog {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+#blog1 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  border-bottom: 1px solid rgb(0, 0, 0.05);
+  background: url("../assests/b11.png");
+  background-repeat: repeat;
+  background-position: right;
+}
+#blog1 h1 {
+  font-family: Quicksand;
+  font-size: 1.9rem;
+  color: whitesmoke;
+}
+.blog-container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.blog-box {
+  width: 350px;
+  background-color: white;
+  border: 1px solid #dad3d3;
+  margin: 20px;
+  border-radius: 10px;
+}
+.blog-box2 {
+  width: 350px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+}
+.blog-img {
+  width: 100%;
+  height: 240px;
+}
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.blog-text {
+  font-family: Abel;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.blog-text span {
+  color: #392a60;
+  font-size: 0.9rem;
+}
+.blog-text .blog-title {
+  padding-top: 20px;
+  font-size: 1.6rem;
+  color: black;
+}
+.blog-text .blog-title:hover {
+  color: #a07db7;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+.blog-text p {
+  display: -webkit-box;
+  margin: 20px 0px;
+  justify-content: center;
+  color: #06282b;
+  text-align: justify;
+}
+.blog-text a {
+  color: black;
+}
+.blog-text a:hover {
+  cursor: pointer;
+  color: #a07db7;
+  transition: all ease 0.3s;
+}
+main .site-content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+main .post-content {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+main .site-content .post-content > .post-image,
+.post-tit {
+  padding: 1rem 2rem;
+  position: relative;
+}
+main .site-content .post-content > .post-image .post-info {
+  background: var(--sky);
+  padding: 1rem;
+  position: absolute;
+  bottom: 0%;
+  left: 21vw;
+  border-radius: 2rem;
+}
+main .site-content .post-content > .post-image > div {
+  overflow: hidden;
+}
+main .site-content .post-content > .post-image .img {
+  width: 100%;
+  transition: all 1s ease;
+}
+main .site-content .post-content > .post-image .img:hover {
+  transform: scale(1.3);
+}
+main .post-content .post-tit a {
+  font-family: Abel;
+  font-size: 1.5rem;
+}
+main .post-content .post-tit p {
+  font-family: Livvic;
+  text-align: justify;
+}
+.site-content .post-content .post-tit .post-btn {
+  border-radius: 0;
+  padding: 0.7rem 1.5rem;
+  background: var(--sky);
+  font-family: Livvic;
+}
+
+/*--------------side-bar-------------------*/
+.site-content > .sidebar .category h2 {
+  font-family: Livvic;
+}
+.site-content > .sidebar .category-list {
+  font-family: Livvic;
+}
+.site-content > .sidebar .category-list .list-items {
+  background: var(--sky);
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 0;
+  border-radius: 3rem;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.site-content .sidebar .popular-posts h2 {
+  font-family: Livvic;
+  font-size: 25px;
+  margin-top: 2rem;
+}
+.site-content .sidebar .popular-posts .post-info {
+  left: 1.5rem !important;
+  border-radius: 0rem !important;
+  background: white !important;
+}
+.site-content .sidebar .popular-posts .post-tit a {
+  font-size: 1.2rem;
+  color: black;
+  font-family: Anton;
+}
+.site-content .sidebar .popular-posts .post-image {
+  height: 100%;
+}
+
+.site-content .sidebar .newsletter h2 {
+  font-family: Livvic;
+  font-size: 25px;
+}
+.site-content .sidebar .newsletter .form-element {
+  padding: 0.5rem 2rem;
+}
+.site-content .sidebar .newsletter .input-element {
+  width: 80%;
+  height: 1.9rem;
+  padding: 0.3rem 0.5rem;
+  font-family: Abel;
+  font-size: 1rem;
+}
+.site-content .sidebar .newsletter .form-btn {
+  border-radius: 0;
+  padding: 0.8rem 34%;
+  margin: 1.7rem 0;
+  background: var(--sky);
+  font-family: Abel;
+}
+.site-content .sidebar .popular-tags {
+  padding: 3rem 0;
+}
+.site-content .sidebar .popular-tags .tags .tag {
+  background: var(--sky);
+  padding: 0.4rem 1rem;
+  border-radius: 3rem;
+  margin: 0.4rem 0.6rem;
+}
+/*---------------side-bar---------------x----*/
+
+/*---------------main section-----x-------*/
+
+/*-------------------footer---------------------*/
+footer.footer {
+  height: 100%;
+  background: black;
+  position: relative;
+}
+footer.footer .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer.footer .container > div {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.2rem 4rem;
+}
+footer.footer .container .about-us h2 {
+  color: whitesmoke;
+}
+footer.footer .container .about-us p {
+  color: rgb(204, 201, 195);
+}
+footer.footer .container .newsletter h2 {
+  color: whitesmoke;
+}
+footer.footer .container .newsletter p {
+  color: rgb(204, 201, 195);
+}
+
+footer.footer .container .newsletter .input-element {
+  width: 50%;
+  height: 1.5rem;
+  padding: 0.3rem 0.5rem;
+  font-family: Abel;
+  font-size: 1rem;
+  color: white;
+  background: transparent;
+  border: #8ec5fc;
+}
+footer.footer .container .newsletter .form-element span {
+  background: var(--sky);
+  padding: 0.6rem 0.7rem;
+  cursor: pointer;
+}
+footer.footer .container .follow h2 {
+  color: whitesmoke;
+}
+footer.footer .container .follow p {
+  color: rgb(204, 201, 195);
+}
+footer.footer .container .follow i {
+  color: whitesmoke;
+  padding: 0 0.4rem;
+}
+footer.footer .rights {
+  color: rgb(134, 130, 130);
+  font-family: Abel;
+  justify-content: center;
+}
+footer.footer .rights a {
+  color: rgb(134, 130, 130);
+}
+footer.footer .move-up {
+  position: absolute;
+  right: 6%;
+  top: 50%;
+}
+footer.footer .move-up a {
+  color: var(--midnight);
+}
+footer.footer .move-up a:hover {
+  color: #8ec5fc;
+  cursor: pointer;
+}
+
+/*---------------contact form-----------------*/
+.heading {
+  text-align: center;
+  font-family: Abel;
+  color: white;
+  font-size: 35px;
+}
+
+.card {
+  align-items: center;
+  background-color: rgb(255, 252, 252);
+  width: 650px;
+  margin: 50px;
+  margin-left: 380px;
+  height: 510px;
+  border-radius: 10px;
+  box-shadow: 0 0 80px 0px rgb(36, 35, 36);
+}
+.card p {
+  font-family: Anton;
+  font-size: 65px;
+  margin: 20px 35px;
+  color: #a07db7;
+}
+.name p {
+  font-size: 20px;
+  font-family: Abel;
+  margin: 15px 5px;
+  color: black;
+}
+.fname {
+  align-items: center;
+  width: 250px;
+  height: 20px;
+  padding: 10px;
+  margin: 2px 25px;
+  color: black;
+  /* border: 1px groove rgb(85, 83, 83); */
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 7px 0px rgb(163, 159, 163);
+  font-size: 15px;
+}
+.fname:hover
+{
+  font-family: Abel;
+  border: none;
+}
+textarea {
+  padding: 10px 10px;
+  margin: 32px 25px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 7px 0px rgb(163, 159, 163);
+  font-size: 15px;
+  font-family: Abel;
+  outline: none;
+
+}
+
+::placeholder {
+  font-family: Abel;
+}
+.contact-btn {
+  background: var(--sky);
+  text-align: center;
+  margin: 5px 165px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  
+}
+.contact-btn:hover
+{
+  cursor: pointer;
+  transition: all;
+  color: white;
+  font-size: 20px;
+}
+.contact p {
+  font-family: Anton;
+  font-size: 20px;
+  margin: 15px 35px;
+  text-align: center;
+  color: #a07db7;
+}
+.contact i {
+  color: black;
+  flex-direction: row;
+  padding: 12px 15px;
+}
+.contact a{
+  align-items: center;
+  text-align: center;
+  font-family: Abel;
+}
+
+
+
+/*---------------contact form----------x-------*/
+
+
+
+/*------------------login-form------------------*/
+.login-class
+{
+  width: 400px;
+  height: 450px;
+  background-color: white;
+  margin: 70px 510px;
+  border-radius: 3px
+
+}
+.login-class p{
+  font-size: 25px;
+  font-family: Anton;
+  color: #a07db7;
+  text-align: center;
+  padding: 20px;
+  
+} 
+.username .uname
+{
+  width: 270px;
+  padding: 15px;
+  margin: 0 50px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgb(163, 159, 163);
+}
+.email .uname{
+  width: 270px;
+  padding: 15px;
+  margin: 30px 50px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgb(163, 159, 163);
+}
+input[type=text]
+{
+  outline: none;
+}
+input[type=email]
+{
+  outline: none;
+}
+input[type=password]
+{
+  outline: none;
+}
+.uname:hover{
+  font-family: Abel;
+  
+}
+.login-class a{
+  font-family: Abel;
+  font-size: 15px;
+  margin-left: 250px;
+  color: #bc88de;
+}
+.login-btn {
+  background: var(--sky);
+  text-align: center;
+  margin: 25px -150px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-family: Abel;
+  
+}
+.login-btn:hover
+{
+  cursor: pointer;
+  transition: all;
+  color: white;
+  font-size: 18px;
+}
+.login-class .sign p{
+  font-size: 18px;
+  font-family: Abel;
+  color: black;
+  margin: 0px 20px;
+  text-align: left;
+}
+.login-class .sign a{
+  margin: 0px 10px;
+  font-size: 17px;
+}
+
+
+
+
+
+/*------------------login-form---------x---------*/
+
+
+
+/*------------------------Sign-form--------------*/
+
+.sign-class
+{
+  width: 400px;
+  height: 490px;
+  background-color: white;
+  margin: 45px 510px;
+  border-radius: 3px
+
+}
+.sign-class p{
+  font-size: 25px;
+  font-family: Anton;
+  color: #a07db7;
+  text-align: center;
+  padding: 20px;
+  
+} 
+.username .uname
+{
+  width: 270px;
+  padding: 15px;
+  margin: 0 50px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgb(163, 159, 163);
+}
+.email .uname{
+  width: 270px;
+  padding: 15px;
+  margin: 30px 50px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgb(163, 159, 163);
+}
+.pass .uname{
+  width: 270px;
+  padding: 15px;
+  margin: 0px 50px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgb(163, 159, 163);
+}
+.sign-btn {
+  background: var(--sky);
+  text-align: center;
+  margin: 40px 100px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-family: Abel;
+  
+}
+.sign-btn:hover
+{
+  cursor: pointer;
+  transition: all;
+  color: white;
+  font-size: 18px;
+}
+.sign-class .sign p{
+  font-size: 18px;
+  font-family: Abel;
+  color: black;
+  margin: 0px 20px;
+  text-align: left;
+}
+.sign-class .sign a{
+  margin: 0px 10px;
+  font-size: 17px;
+}
+
+
+/*------------------------Sign-form--------x------*/
+
+
+/*-------------------footer---------x------------*/
+
+/*---------viewport less than 750----------*/
+
+/* @media only screen and (max-width:750px){
+ .navclass.nav-menu, .navclass .nav-items {
+    flex-direction: column; 
+ }} */
